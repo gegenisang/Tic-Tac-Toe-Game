@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Tic Tac Toe Game</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,69 @@
     <link rel="stylesheet" type="text/css" href="Game.css">
     <link rel="stylesheet" type="text/css" href="font/css/font-awesome.css">
 </head>
-<body>
 
-<script src="jquery-1.10.1.min.js"></script>
-<script src="bootstrap.min.js"></script>
-<script src="Game.js"></script>
+<body>
+    <div class="board-container" id="playing-area">
+        <div class="board-top">
+            <h3 class="title">Tic Tac Toe Game </h3>
+            <h3 class="showTurn">x's trun</h3>
+        </div>
+        <div id="gameBoard">
+            <div class="game-choice">
+                <p>How do you want to play?</p>
+                <button class="one-player">One Player</button>
+                <button class="two-player">Two Player</button>
+            </div>
+            <div class="game-starter">
+                <p>Would you like to be X or O ?</p>
+                <button class="choice-x">X</button>
+                <button class="choice-o">O</button>
+                <button class="back">back</button>
+            </div>
+            <div class="game-message">
+            
+            </div>
+            <div class="border-box">
+                <table border="0" id="boxBoard">
+                    <tr>
+                        <td class="square" id="1"></td>
+                        <td class="square" id="2"></td>
+                        <td class="square" id="3"></td>
+                    </tr>
+                    <tr>
+                        <td class="square" id="4"></td>
+                        <td class="square" id="5"></td>
+                        <td class="square" id="6"></td>
+                    </tr>
+                    <tr>
+                        <td class="square" id="7"></td>
+                        <td class="square" id="8"></td>
+                        <td class="square" id="9"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!--  <div class="footer">
+            <p class="text-center">
+                made with <i class="fa fa-gamepad " aria-hidden="true"></i> by <a href="">gegenisang</a>
+            </p>
+        </div> -->
+        <div id="footer">
+            <div class="board-bottom">
+                <p class="score-1">scroe X : <span> 0</span></p>
+                <p class="score-2">scroe O : <span> 0</span></p>
+                <button class="reset">Reset All</button>
+            </div>
+            <div class="bottom-footer">
+                <p class="text-center">
+                    made with <i class="fa fa-gamepad " aria-hidden="true"></i> by <a href="">gegenisang</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="Game.js"></script>
 </body>
+
 </html>

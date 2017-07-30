@@ -1,0 +1,389 @@
+body,
+div,
+p,
+button,
+span,
+table,
+tr,
+td,
+tbody {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+
+/*.board{
+    width: 400px;
+    height: 430px;
+    background: #f0b487;
+    border-radius: 5px;
+    box-shadow:  -3px 10px  20px rgba(0,0,0,0.6),0px 6px 20px #000;
+    margin: 10% auto;
+    position: relative;
+}
+
+.board #gameBoard{
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  background: #234535;
+  margin-top: 35px;
+  margin-left: 25px;
+  box-shadow: inset 0px 0px 400px rgba(0,0,0,0.8);
+  /*inset 0px 00px 100px rgba(0,0,0,0.8);*/
+
+
+/*  margin: 35px auto;*/
+
+
+/*}*/
+
+.board-container {
+    width: 400px;
+    height: 530px;
+    background: transparent;
+    border-radius: 20px;
+    margin: 5% auto;
+}
+
+.board-top,
+#footer {
+    width: 400px;
+    height: 65px;
+}
+
+.board-top {
+    position: relative;
+    background: #f1c50e;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.board-top .title {
+    height: 65px;
+    line-height: 65px;
+    font-size: 2.2rem;
+    color: #fff;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: center;
+}
+
+
+/*.board-top .title{
+  display: none;
+}*/
+
+.board-top .showTurn {
+    height: 65px;
+    line-height: 65px;
+    font-size: 2.2rem;
+    color: #fff;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: center;
+}
+
+.board-top .showTurn {
+    display: none;
+}
+
+#footer {
+    background: #e74c3c;
+    /* color: #18b3c3;*/
+    color: #f6f6f6;
+    border-radius: 0px 0px 20px 20px;
+}
+
+
+/*.board-bottom,
+.bottom-footer{
+    position: relative;
+    background: #e74c3c;
+    color: #18b3c3;
+    color: rgba(100, 60, 50, .9);
+    border-radius: 0px 0px 20px 20px;
+}*/
+
+
+/*.board-bottom,.bottom-footer{
+  
+    width: 100%;
+    height: 100%;
+}*/
+
+.board-bottom {
+    z-index: 1000;
+}
+
+.bottom-footer {
+    z-index: 500;
+}
+
+.board-bottom {
+    display: none;
+}
+
+.bottom-footer {
+    /*display: none;*/
+}
+
+.bottom-footer p {
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.bottom-footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#gameBoard {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: #34485e;
+    box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.6);
+    background-size: cover;
+    /*position: relative;
+  margin: 0 auto;*/
+    overflow: hidden;
+}
+
+.game-starter,
+.game-choice,
+.game-message {
+    z-index: 1000;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+
+/*.game-choice {
+    display: none;
+}*/
+
+.game-message {
+    /*position: relative;*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: 2500;
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 400px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+/*.game-message #again {
+    position: absolute;
+    bottom: 50px;
+    width: 100px;
+    height: 50px;
+    background: transparent;
+    left: 150px;
+    color: #e74c3c;
+    outline: none;
+    border: 3px solid transparent;
+    border-radius: 20px;
+}
+
+.game-message #again:hover {
+
+    border: 3px dashed #e74c3c;
+    outline: none;
+}*/
+
+
+/*.draw-message,
+.lost-message,
+.win-message {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.draw-message,
+.lost-message,
+.win-message{
+    display: none;
+}*/
+
+
+/*.draw-message p,
+.lost-message p,
+.win-message p {
+    font-size: 3rem;
+    width: 100%;
+    height: 100%;
+    line-height: 350px;
+    text-align: center;
+}*/
+
+.game-starter {
+    display: none;
+}
+
+.game-starter p {
+    padding: 60px 80px 30px;
+    font-size: 30px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.game-choice p {
+    padding: 60px 30px 20px;
+    font-size: 30px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.game-starter button,
+.game-choice button {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background: transparent;
+    font-size: 30px;
+    color: #f1c50e;
+    border: 3px solid transparent;
+    outline: none;
+    margin: 25px 25px 0px;
+}
+
+.game-starter .back {
+    /*position: absolute;
+    bottom:30px;*/
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    /*left: 50%;
+    margin-left: -50px;*/
+    /*margin-left: -20px;*/
+}
+
+
+/*.game-choice .one-player{
+    color: #e74c3c;
+}
+.game-choice .two-player{
+    color: #f1c50e; 
+}*/
+
+.game-starter button:hover,
+.game-choice button:hover {
+    border: 3px dashed #f1c50e;
+    border-radius: 20px;
+}
+
+.border-box {
+    width: 360px;
+    height: 360px;
+    margin: 20px;
+    z-index: 2000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /*position: relative;
+    left: 0;
+    top: 0;*/
+    color: #fff;
+}
+
+.border-box {
+    display: none;
+}
+
+.border-box .collapse {
+    /*position: absolute;*/
+    border-color: #fff;
+    border-collapse: collapse;
+}
+
+.border-box table {
+    /* display: inline-block;*/
+    border: 0px solid transparent;
+}
+
+.border-box table td:first-child {
+    border-right: 3px solid #fff;
+}
+
+.border-box table td:last-child {
+    border-left: 3px solid #fff;
+}
+
+.border-box table tr:first-child {
+    border-bottom: 3px solid #fff;
+}
+
+.border-box table tr:last-child {
+    border-top: 2px solid #fff;
+}
+
+.border-box .square {
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    font-size: 80px;
+    font-weight: bold;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.win {
+    background: #000;
+}
+
+.board-bottom .score-1,
+.board-bottom .score-2 {
+    font-size: 1.8rem;
+    display: inline-block;
+    /* background: #ccc;*/
+    margin-top: 20px;
+}
+
+.board-bottom .score-1 {
+    margin-left: 20px;
+}
+
+.board-bottom .score-1 span {
+    margin-top: -20px;
+    margin-left: 0px;
+}
+
+.board-bottom .score-2 {
+    margin-left: 40px;
+}
+
+.board-bottom .score-2 span {
+    margin-left: 0px;
+    margin-top: -20px;
+}
+
+.board-bottom .reset {
+    margin-bottom: 30px;
+    margin-left: 30px;
+    background: none;
+    font-size: 2rem;
+    border-radius: 20px;
+    outline: none;
+    padding:2px;
+    border: 2px solid transparent;
+}
+
+.board-bottom .reset:hover {
+    outline: none;
+    border: 2px dashed #f1c50e;
+}
+
+
+/*.bottom-footer {
+    z-index: 2000;
+}
+*/
